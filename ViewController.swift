@@ -100,7 +100,11 @@ class ViewController: UIViewController {
     }
     
     
-    
+    func counterInvalidated() {
+        if text.text == "Cross has won!" || text.text == "Nought has won!" {
+            counter = 0
+        }
+    }
     
     
     
@@ -136,6 +140,7 @@ class ViewController: UIViewController {
         print(counter)
         
     winner()
+        counterInvalidated()
         
     }
     
@@ -168,6 +173,7 @@ class ViewController: UIViewController {
         print(counter)
         
         winner()
+        counterInvalidated()
     }
    
     
@@ -205,7 +211,7 @@ class ViewController: UIViewController {
         
         
      winner()
-        
+        counterInvalidated()
         
     }
    
@@ -241,6 +247,7 @@ class ViewController: UIViewController {
         print(counter)
         
         winner()
+        counterInvalidated()
     }
    
     @IBAction func button5(_ sender: Any) {
@@ -271,6 +278,7 @@ class ViewController: UIViewController {
         print(counter)
         
         winner()
+        counterInvalidated()
     }
     
     @IBAction func button6(_ sender: Any) {
@@ -301,6 +309,7 @@ class ViewController: UIViewController {
         print(counter)
         
         winner()
+        counterInvalidated()
     }
     
     @IBAction func button7(_ sender: Any) {
@@ -332,6 +341,7 @@ class ViewController: UIViewController {
         print(counter)
         
         winner()
+        counterInvalidated()
     }
     
     @IBAction func button8(_ sender: Any) {
@@ -363,6 +373,7 @@ class ViewController: UIViewController {
         print(counter)
         
         winner()
+        counterInvalidated()
     }
     
     @IBAction func button9(_ sender: Any) {
@@ -394,6 +405,7 @@ class ViewController: UIViewController {
         print(counter)
         
         winner()
+        counterInvalidated()
         
         
     }
